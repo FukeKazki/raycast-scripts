@@ -2,7 +2,7 @@
 
 # Required parameters:
 # @raycast.schemaVersion 1
-# @raycast.title add-daily-readinglist
+# @raycast.title readinglist
 # @raycast.mode silent
 
 # Optional parameters:
@@ -17,6 +17,7 @@ set the clipboard to link
 
 log link
 
-set the fileName to do shell script "date '+%Y%m%d'"
+set the filePath to "~/Develop/github.com/FukeKazki/ProgrammingNikki/articles/other/readinglist.mdx"
 
-do shell script "gsed -i \"/# Reading/a " & "- " & link & "\" ~/Develop/github.com/FukeKazki/ProgrammingNikki/articles/daily/" & fileName & ".mdx"
+-- gsed -i '1i- [????](???)' readinglist.mdx
+do shell script "gsed -i '1i- " & link & "'" & " " & filePath
