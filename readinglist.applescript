@@ -17,7 +17,9 @@ set the clipboard to link
 
 log link
 
-set the filePath to "~/Develop/github.com/FukeKazki/ProgrammingNikki/articles/other/readinglist.mdx"
+# TODO: いい感じにつくりたい
+
+# set the filePath to "~/Develop/github.com/FukeKazki/ProgrammingNikki/articles/other/readinglist.mdx"
 
 -- gsed -i '1i- [????](???)' readinglist.mdx
-do shell script "gsed -i '1i- " & link & "'" & " " & filePath
+# do shell script "gsed -i '1i- " & link & "'" & " " & filePath
