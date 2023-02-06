@@ -50,10 +50,10 @@ do shell script "mkdir -p ~/readinglist"
 -- ファイルの作成
 do shell script "touch" & " " & filePath
 
-do shell script "zsh pull.sh"
+do shell script "zsh readinglist-internal/pull.sh"
 
 -- ファイルの末尾に書き込む
 -- echo '- [タイトル](URL)' >> filePath
 do shell script "echo" & " " & "'- " & link & "'" & " " & ">>" & " " & filePath
 
-do shell script "zsh push.sh"
+do shell script "zsh readinglist-internal/push.sh"
