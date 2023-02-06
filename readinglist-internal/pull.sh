@@ -5,7 +5,7 @@ cd ~/readinglist
 DIR=".git"
 
 if [ ! -d $DIR ];then
-  echo "git初期化してremote登録して"
+  echo "git初期化,remote登録,空コミット,pushして"
   exit 1
 fi
 
