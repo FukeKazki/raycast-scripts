@@ -3,7 +3,7 @@
 # Required parameters:
 # @raycast.schemaVersion 1
 # @raycast.title readinglist
-# @raycast.mode silent
+# @raycast.mode compact
 
 # Optional parameters:
 # @raycast.icon 🤖
@@ -46,11 +46,11 @@ log link
 
 -- フォルダの作成
 
+do shell script "zsh readinglist-internal/pull.sh"
+
 do shell script "mkdir -p ~/readinglist"
 -- ファイルの作成
 do shell script "touch" & " " & filePath
-
-do shell script "zsh readinglist-internal/pull.sh"
 
 -- ファイルの末尾に書き込む
 -- echo '- [タイトル](URL)' >> filePath
