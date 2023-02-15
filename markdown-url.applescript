@@ -8,8 +8,8 @@
 # Optional parameters:
 # @raycast.icon 🤖
 
-tell application "Google Chrome" to set currentTabUrl to URL of active tab of window 1
-tell application "Google Chrome" to set currentTabTitle to title of active tab of window 1
+tell application "Microsoft Edge" to set currentTabUrl to URL of active tab of window 1
+tell application "Microsoft Edge" to set currentTabTitle to title of active tab of window 1
 
 set link to "[" & currentTabTitle & "]" & "(" & currentTabUrl & ")"
 
